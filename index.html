@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+    <div class="calculator">
+        <div>
+            <input type="text" Id="result" readonly>
+        </div> 
+        
+    <div>
+        <input type="button" value="AC" onclick="deleteAll()">
+        <input type="button" value="DE" onclick="delete2()">
+        <input type="button" value="." onclick="display('.')">
+        <input type="button" value="%" onclick="percent('%')">
+    </div>
+    <div>
+        <input type="button" value="1" onclick="display('1')">
+        <input type="button" value="2" onclick="display('2')">
+        <input type="button" value="3" onclick="display('3')">
+        <input type="button" value="+" onclick="add('+')">
+    </div>
+    <div>
+        <input type="button" value="4" onclick="display('4')">
+        <input type="button" value="5" onclick="display('5')">
+        <input type="button" value="6" onclick="display('6')">
+        <input type="button" value="-" onclick="substract('-')">
+    </div>
+    <div>
+        <input type="button" value="7" onclick="display('7')">
+        <input type="button" value="8" onclick="display('8')">
+        <input type="button" value="9" onclick="display('9')">
+        <input type="button" value="x" onclick="multiply('*')">
+    </div>
+    <div>
+        <input type="button" value="0" onclick="display('0 ')">
+        <input type="button" value="÷" onclick="divide('/')">
+        <input type="button" value="=" onclick="calculate()" class="calculate">
+    </div>
+    </div>
+    </div>
+ </div>
+<script src="/cal.js"></script>
+</body>
+</html>
