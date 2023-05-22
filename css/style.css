@@ -43,9 +43,9 @@ input.calculate{
 
 
 /* Media queries */
-@media all and (max-width: 300px)  {
+@media all and (min-width: 300px)  {
  .container{
-   width: 300vh;
+   width: 60vh;
  }   
  
 .calculator{
@@ -54,6 +54,7 @@ input.calculate{
     width: 40vh;
     height: 65vh;
     border-radius: 5px;
+    overflow-x: hidden;
 } 
 #result{
     width: 90%;
